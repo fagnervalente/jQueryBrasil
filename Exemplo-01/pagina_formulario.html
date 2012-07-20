@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="="author" content="Fagner Valente">
+    
+	<link type="text/css" href="style-exemplo.css" rel="stylesheet" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+    <script type="text/javascript" src="scripts-exemplo.js" ></script>
+    
+	<title>Formulário dinâmico com jQuery - #Exemplo 1</title>
+</head>
+
+<body>
+
+	<h1>Formulário dinâmico com jQuery - #Exemplo 1 </h1>
+    
+    <div id="wrapper-formulario">
+    
+    	<form action="recebe-form.php" method="POST" id="form-produtos">
+        
+        <table id="grid-produtos">
+        	<thead>
+            	<tr><th>Nome</th><th>Preço</th><th>Quantidade</th></tr>
+            </thead>
+        	<tbody>
+            	
+            </tbody>
+            <tfoot>
+            	<tr><td colspan="3"><br/></td></tr>
+            </tfoot>
+        </table>
+        
+        <button id="button-add" class="button">Adicionar Linha</button>
+        <input type="submit" value="Enviar" class="button" />
+        
+    	</form>
+        
+    </div>
+    
+</body>
+</html>

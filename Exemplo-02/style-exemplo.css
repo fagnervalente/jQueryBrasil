@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0; }
+
+@font-face {
+	font-family: League-Gothic;
+	src: url("League-Gothic.otf") format("opentype");
+}
+
+#wrapper-formulario, h1 { 
+	margin:0 auto;
+	text-align:center;
+}
+
+#wrapper-formulario{
+	width:640px;
+	margin-top:50px;
+}
+
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	padding:10px;
+	background:#474747;
+	
+	text-align: center;
+	font-family: "League-Gothic", "Courier New", Courier, monospace ;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #222;
+	text-shadow: 0px 1px 2px #666;
+	
+	box-shadow: 0 -3px 5px #222 inset;
+}
+
+#grid-produtos {
+	border-collapse:collapse;
+	border-spacing:0;
+	display:inline-block;
+	width:auto;
+	float:left;
+	position:relative;
+}
+
+#grid-produtos tbody {border:1px solid #FFF;} 
+
+input[type="text"]{
+	padding:2px;
+	margin:2px;
+	color:#666;
+	border:1px solid #CCC;
+}
+
+input[name="nome[]"] {
+	width:240px;
+}
+
+input[name="quantidade[]"], input[name="preco[]"]{
+	width:80px;
+}
+
+th { 
+	text-align:left; 
+	padding:4px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight:normal; 
+	font-size:12px; 
+}
+thead , tfoot { margin:4px 0;}
+thead tr, tfoot tr { border:1px solid #CCC; }
+
+td:first-child, th:first-child{ padding-left:20px; }
+td:last-child, th:last-child{ padding-right:20px; }
+
+
+
+.button {
+	border:1px solid #CCC;
+	padding:4px 10px;
+	background:#FFF;
+	display:inline-block;
+	float:left;
+	position:relative;
+	min-width:120px;
+	margin:0 5px 5px 5px;
+}
+.button:hover {
+	background:#666;
+	color:#FFF;
+	border:1px solid #999;
+}
+.button:active {
+	color:#FFF;
+	background:#AAA;
+}
